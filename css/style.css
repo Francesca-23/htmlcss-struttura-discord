@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    height: 350px;
+    background-color: blue;
+}
+
+header > nav{
+    height: 15%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .navigation{
+    background-color: orange;
+    flex-basis: 70%;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+}
+
+.navigation .bar-1{
+    flex-basis: 25%;
+    border: 1px dashed black;
+}
+
+.navigation .bar-2{
+    flex-basis: 50%;
+    border: 1px dashed black;
+}
+
+header > section{
+    display: flex;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+section > .card-1{
+    flex-basis: 50%;
+    height: 80%;
+    background-color: aqua;  
+}
+
+/* Main */
+
+.section-type1{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 85%;
+    flex-basis: 60%;
+    display: flex;
+}
+
+.box > .box-1{
+    flex-basis: 60%;
+    background-color: hotpink;
+}
+
+.box > .box-2{
+    flex-basis: 40%;
+    background-color: dodgerblue;
+}
+
+.section-type1.background-grey{
+    background-color: lightgrey;
+}
+
+.section-type2{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.section-type2 > .box-3{
+    background-color: purple;
+}
+
+/* Footer */
+
+.section-type1.background-black{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-type1 > .big-box{
+    height: 90%;
+    flex-basis: 60%;
+    display: flex;
+}
+
+.big-box .column-1{
+    background-color: pink;
+    flex-basis: calc((100% / 5) + 8%);
+}
+
+.big-box .column-2{
+    background-color: lightgreen;
+    flex-basis: calc(100% / 5);
+    border: 1px dashed white;
+}
