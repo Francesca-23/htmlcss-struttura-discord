@@ -1,3 +1,5 @@
+/* Settings */
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +29,11 @@ nav > .navigation{
     text-align: center;
 }
 
+.navigation ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
 .navigation .bar-1{
     flex-basis: 25%;
     border: 1px dashed black;
@@ -44,7 +51,7 @@ header > section{
     align-items: center;
 }
 
-section > .card-1{
+section > .card{
     flex-basis: 50%;
     height: 80%;
     background-color: aqua;  
@@ -94,22 +101,37 @@ section > .card-1{
 /* Footer */
 
 .section-type1.background-black{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #23272a;
+    
 }
 
 .section-type1 > .big-box{
     height: 90%;
     flex-basis: 60%;
     display: flex;
+    border-bottom: 1px solid #8ea1e1;
+    padding-bottom: 20px;
 }
 
-.big-box .column-1{
+.big-box :first-child{
     background-color: pink;
     flex-basis: calc((100% / 5) + 8%);
 }
 
-.big-box .column-2{
+.big-box .column{
     background-color: lightgreen;
     flex-basis: calc(100% / 5);
     border: 1px dashed white;
+}
+
+.section-type3{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #23272a;
+}
+
+.section-type3 .box{
+    justify-content: space-between;
+    margin: auto;
 }
